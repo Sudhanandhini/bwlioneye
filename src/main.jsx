@@ -21,7 +21,7 @@ import Gallery from "./pages/Gallery";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/bwlioneye">
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />

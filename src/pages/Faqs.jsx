@@ -102,7 +102,7 @@ export default function Faqs() {
 
 
 
- <div className="max-w-4xl mx-auto py-12 px-4">
+ <div className="max-w-4xl mx-auto py-12 px-6">
      
 
       <div className="space-y-2">
