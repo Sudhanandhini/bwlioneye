@@ -10,7 +10,7 @@ export default function Contact() {
     return (
         <div className="w-full bg-white">
             {/* 1️⃣ Breadcrumb Section */}
-            <div className="w-full bg-white py-6 px-4 border-b">
+            <div className="w-full bg-white py-6 px-4 ">
                 <div className="max-w-6xl mx-auto">
                     <h1 className="text-3xl font-bold text-gray-800">Contact Us</h1>
                     <div className="flex items-center text-sm mt-2">
@@ -23,9 +23,9 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="bg-sky-500  min-h-[50vh]  py-12 px-4 sm:px-8 md:px-16">
+            <div className=" py-12 px-4 sm:px-8 md:px-16">
                 {/* Heading */}
-                <div className="text-white mb-8 text-center md:text-left">
+                <div className="text-black mb-8 text-center md:text-left">
                     <h2 className="text-3xl font-bold mb-2">Get in Touch</h2>
                     <p className="text-lg max-w-2xl">
                         Many ways to get in touch with Us!

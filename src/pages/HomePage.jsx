@@ -41,7 +41,6 @@ export default function HomePage() {
                         </div>
                     </SwiperSlide>
 
-
                     {/* Slide 2 */}
                     <SwiperSlide>
                         <div
@@ -51,8 +50,6 @@ export default function HomePage() {
 
                         </div>
                     </SwiperSlide>
-
-
 
                     {/* Slide 3*/}
                     <SwiperSlide>
@@ -64,8 +61,6 @@ export default function HomePage() {
                         </div>
                     </SwiperSlide>
 
-
-
                     {/* Slide 4 */}
                     <SwiperSlide>
                         <div
@@ -76,28 +71,6 @@ export default function HomePage() {
                         </div>
                     </SwiperSlide>
 
-
-                    {/* Slide 2 */}
-                    <SwiperSlide>
-                        <div className="flex flex-col md:flex-row items-center justify-between w-full h-full bg-gradient-to-r from-[#e9f7ff] via-[#d5f0f5] to-[#a7e4f2] px-6 md:px-20">
-                            <div className="text-center md:text-left max-w-xl">
-                                <h1 className="text-5xl font-bold mb-4">Change a Life!</h1>
-                                <p className="text-lg md:text-xl font-semibold mb-6">
-                                    Your support can bring light to someone's world.
-                                </p>
-                                <button className="bg-white text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition flex items-center gap-2">
-                                    Learn More <span>➔</span>
-                                </button>
-                            </div>
-                            <div className="mt-8 md:mt-0">
-                                <img
-                                    src={banner2}
-                                    alt="Slider Image"
-                                    className="rounded-lg max-h-[500px] object-cover"
-                                />
-                            </div>
-                        </div>
-                    </SwiperSlide>
                 </Swiper>
             </div>
 
@@ -185,10 +158,10 @@ export default function HomePage() {
             </div>
 
 
-            <div className="flex flex-col md:flex-row items-center justify-center  bg-white  py-10 px-20 md:px-20">
-
+            <div className="flex flex-col md:flex-row items-center justify-center  bg-white  py-16 px-6 md:px-20">
+               <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Content */}
-                <div className="md:w-1/2 space-y-4">
+                <div >
                     <h2 className="text-xl font-bold text-blue-900">
                         Why one should donate Eyes?
                     </h2>
@@ -230,12 +203,13 @@ export default function HomePage() {
                 </div>
 
                 {/* Right GIF Section */}
-                <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+                <div >
                     <img
                         src={gifCandle}// place your gif in public/donation.gif
                         alt="Eye Donation Awareness"
                         className="w-[90%] md:max-w-md max-w-md "
                     />
+                </div>
                 </div>
             </div>
 
