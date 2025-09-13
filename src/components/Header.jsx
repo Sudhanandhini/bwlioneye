@@ -28,12 +28,13 @@ function Header() {
       <div className="bg-blue-900 text-white flex items-center px-4 sm:px-6 py-3 relative">
         {/* Logo + Title */}
         <div className="flex items-center space-x-3">
+          <a href="/">
           <img
             src={logo}
             alt="Logo"
             className="w-full h-full sm:w-48 sm:h-16"
           />
-         
+         </a>
         </div>
 
         {/* Desktop Menu */}

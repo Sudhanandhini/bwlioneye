@@ -3,7 +3,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import banner1 from '../assets/image/banner.jpg'
-import banner2 from '../assets/image/banner3-2.jpg'
+import banner2 from '../assets/image/Untitled design(2).png'
 import banner3 from '../assets/image/banner4.jpg'
 import banner4 from '../assets/image/banner22-1.jpg'
 import aboutImg from '../assets/image/home-about.jpg'
@@ -18,63 +18,58 @@ import logo3 from '../assets/image/brand3.png'
 export default function HomePage() {
     return (
         <>
-
-            <div className="w-full h-[80vh]">
+            <div className="w-full">
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     navigation
                     autoplay={{ delay: 5000 }}
                     loop={true}
-                    className="w-full h-full"
+                    className="w-full"
                 >
                     {/* Slide 1 */}
                     <SwiperSlide>
-                        <div
-                            className="flex items-center justify-center w-90% h-[90vh] bg-cover bg-center relative"
-                            style={{ backgroundImage: `url(${banner1})` }}
-                        >
-
-                            <button className="bg-white text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition flex items-center gap-2">
-                                Donate Now <span>➔</span>
-                            </button>
-
+                        <div className="relative flex items-center justify-center w-full">
+                            <img
+                                src={banner1}
+                                alt="Banner 1"
+                                className="w-full h-full object-contain"
+                            />
+                            <a href="/pledge" className="absolute">
+                                <button className="bg-white text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition flex items-center gap-2">
+                                    Pledge Your Eyes <span>➔</span>
+                                </button>
+                            </a>
                         </div>
                     </SwiperSlide>
 
                     {/* Slide 2 */}
                     <SwiperSlide>
-                        <div
-                            className="flex items-center justify-center w-90% h-[90vh] bg-cover bg-center relative"
-                            style={{ backgroundImage: `url(${banner2})` }}
-                        >
-
-                        </div>
+                        <img
+                            src={banner2}
+                            alt="Banner 2"
+                            className="w-full h-full object-contain"
+                        />
                     </SwiperSlide>
 
-                    {/* Slide 3*/}
+                    {/* Slide 3 */}
                     <SwiperSlide>
-                        <div
-                            className="flex items-center justify-center w-90% h-[90vh] bg-cover bg-center relative"
-                            style={{ backgroundImage: `url(${banner3})` }}
-                        >
-
-                        </div>
+                        <img
+                            src={banner3}
+                            alt="Banner 3"
+                            className="w-full h-full object-contain"
+                        />
                     </SwiperSlide>
 
                     {/* Slide 4 */}
                     <SwiperSlide>
-                        <div
-                            className="flex items-center justify-center w-90% h-[90vh] bg-cover bg-center relative"
-                            style={{ backgroundImage: `url(${banner4})` }}
-                        >
-
-                        </div>
+                        <img
+                            src={banner4}
+                            alt="Banner 4"
+                            className="w-full h-full object-contain"
+                        />
                     </SwiperSlide>
-
                 </Swiper>
             </div>
-
-
 
 
             <div className="bg-gray-50 py-16 px-6 md:px-20">
@@ -159,57 +154,57 @@ export default function HomePage() {
 
 
             <div className="flex flex-col md:flex-row items-center justify-center  bg-white  py-16 px-6 md:px-20">
-               <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                {/* Left Content */}
-                <div >
-                    <h2 className="text-xl font-bold text-blue-900">
-                        Why one should donate Eyes?
-                    </h2>
+                <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    {/* Left Content */}
+                    <div >
+                        <h2 className="text-xl font-bold text-blue-900">
+                            Why one should donate Eyes?
+                        </h2>
 
-                    <ul className="space-y-3 text-gray-700">
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            The cornea is the clear, transparent tissue covering the front of the eye.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            Anyone of any age can donate eyes, even if they have undergone cataract surgery, wear spectacles, contact lenses or suffer from systemic diseases.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            Eyes are never removed from a living person.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            Once death occurs in a family, call the nearest eye bank immediately.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            The donor need not be taken to the eye bank. The team comes and removes the cornea without disfiguring the face.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            The cornea has to be removed within 6 to 8 hours of death and can be preserved for up to seven days.
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="text-blue-600">👁️</span>
-                            Vision can be restored with a corneal transplant.
-                        </li>
-                    </ul>
+                        <ul className="space-y-3 text-gray-700">
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                The cornea is the clear, transparent tissue covering the front of the eye.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                Anyone of any age can donate eyes, even if they have undergone cataract surgery, wear spectacles, contact lenses or suffer from systemic diseases.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                Eyes are never removed from a living person.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                Once death occurs in a family, call the nearest eye bank immediately.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                The donor need not be taken to the eye bank. The team comes and removes the cornea without disfiguring the face.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                The cornea has to be removed within 6 to 8 hours of death and can be preserved for up to seven days.
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-blue-600">👁️</span>
+                                Vision can be restored with a corneal transplant.
+                            </li>
+                        </ul>
 
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md flex items-center gap-2">
-                        DONATE YOUR EYES 👁️
-                    </button>
-                </div>
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-md flex items-center gap-2">
+                            DONATE YOUR EYES 👁️
+                        </button>
+                    </div>
 
-                {/* Right GIF Section */}
-                <div >
-                    <img
-                        src={gifCandle}// place your gif in public/donation.gif
-                        alt="Eye Donation Awareness"
-                        className="w-[90%] md:max-w-md max-w-md "
-                    />
-                </div>
+                    {/* Right GIF Section */}
+                    <div >
+                        <img
+                            src={gifCandle}// place your gif in public/donation.gif
+                            alt="Eye Donation Awareness"
+                            className="w-[90%] md:max-w-md max-w-md "
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -291,7 +286,7 @@ export default function HomePage() {
                             <li className="flex items-start gap-2">
                                 <span className="text-blue-600">👁️</span> NABH – a constituent board of quality council of India
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -314,7 +309,7 @@ export default function HomePage() {
                             <SwiperSlide>
                                 <img src={logo3} alt="SightLife" className="h-20 object-contain mx-auto" />
                             </SwiperSlide>
-                             <SwiperSlide>
+                            <SwiperSlide>
                                 <img src={logo1} alt="NABH" className="h-20 object-contain mx-auto" />
                             </SwiperSlide>
                             <SwiperSlide>

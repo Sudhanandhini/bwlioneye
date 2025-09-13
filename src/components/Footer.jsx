@@ -13,7 +13,7 @@ function Footer() {
           <h2 className="font-bold text-lg mb-4">QUICK LINKS</h2>
           <ul className="space-y-2 text-sm">
             <li> <Link to="/about" className="hover:text-orange-400">About Us</Link></li>
-            <li>Public information</li>
+            {/* <li>Public information</li> */}
             <li><Link to="/what-we-do" className="hover:text-orange-400">What we do</Link></li>
             <li><Link to="/how-it-works" className="hover:text-orange-400">How it works</Link></li>
             <li><Link to="/faqs" className="hover:text-orange-400">
@@ -24,7 +24,7 @@ function Footer() {
         </Link></li>
             <li><Link to="/achievements" className="hover:text-orange-400">Achievements</Link></li>
             <li> <Link to="/pledge" className="hover:text-orange-400">Make A Pledge</Link></li>
-            <li>Myth Busters</li>
+            {/* <li>Myth Busters</li> */}
             <li><Link to="/contact" className="hover:text-orange-400">Contact Us</Link></li>
           </ul>
         </div>
